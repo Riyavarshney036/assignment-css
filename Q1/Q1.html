@@ -1,0 +1,47 @@
+<!-- Q-1 Create a simple page with some div tags and show different ways to add CSS as well as what happens 
+when you target the same elements with inline, internal, and external CSS. Also, utilize comments in the 
+project where required -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ways to add CSS</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Internal CSS is used here-->
+    <style>
+        .para{
+            font-size: 50px;
+            color: blue;
+        }
+
+        .para3 {
+            color: purple;
+            font-size: 10px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Inline CSS is used here -->
+    <div style="font-size: 50px; color: purple;">
+        Inline CSS: An inline CSS is used to apply a unique style to a single HTML element. An inline CSS uses the style attribute of an HTML element.
+    </div>
+    <br>
+    <br>
+    <div class="para">
+        Internal CSS: Internal CSS styles are included within the head section of an HTML document and apply to the entire document, allowing for consistent styling across multiple elements.
+        </div>
+    <br>
+    <br>  
+    <div class="para2">
+       External CSS: An external style sheet is a seperate CSS file that can be accessed by creating a link within the head section of the webpage.
+    </div>
+    <br>
+    <br>
+    <!-- What happens when we use inline, internal, and external CSS on a same element -->
+    <div class="para3" style="color: red; font-size: 30px;">
+        This what happens when we apply inline, internal, and external CSS on a same element. In CSS priority of Inline CSS is much higher than Internal and External. So, here red color and font-size 30px is applied.
+    </div>
+</body>
+</html>

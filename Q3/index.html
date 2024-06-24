@@ -1,0 +1,48 @@
+<!-- Q-3 Develop an HTML form with various input elements. Use CSS to style the form, including setting 
+bac>ground colors for input fields. Create a custom color palette for the form ele7ents, and demonstrate 
+how to apply opacity to one of the form sections. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styled Form</title>
+    <link rel="stylesheet" href="stylee.css">
+</head>
+<body>
+    <div class="form-container">
+        <form class="styled-form">
+            <div class="form-section form-section--primary">
+                <h2 class="form-title">Personal Information</h2>
+                <label for="name" class="form-label">Name:</label>
+                <input type="text" id="name" class="form-input" placeholder="Enter your name">
+
+                <label for="email" class="form-label">Email:</label>
+                <input type="email" id="email" class="form-input" placeholder="Enter your email">
+            </div>
+
+            <div class="form-section form-section--secondary">
+                <h2 class="form-title">Additional Information</h2>
+                <label for="age" class="form-label">Age:</label>
+                <input type="number" id="age" class="form-input" placeholder="Enter your age">
+
+                <label for="gender" class="form-label">Gender:</label>
+                <select id="gender" class="form-input">
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+
+            <div class="form-section form-section--opacity">
+                <h2 class="form-title">Comments</h2>
+                <label for="comments" class="form-label">Your Comments:</label>
+                <textarea id="comments" class="form-input" placeholder="Enter your comments"></textarea>
+            </div>
+
+            <button type="submit" class="form-button">Submit</button>
+        </form>
+    </div>
+</body>
+</html>

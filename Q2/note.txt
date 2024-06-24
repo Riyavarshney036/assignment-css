@@ -1,0 +1,13 @@
+Explanation of BEM Naming Convention:
+
+1. Block: Represents a high level component. In this example, the block is 'content'.
+
+2. Element: Represents a part of the block that has no standalone meaning and is semantically tied to its block. In this example,
+ the elements are paragraphs within the content block, denoted as content__paragraph.
+
+3. Modifier: Represents a different state or version of the block or element. Here, modifiers are used to apply different styles to
+ the paragraphs. For example:
+
+content__paragraph--primary for the primary paragraph.
+content__paragraph--secondary for the secondary paragraph.
+content__paragraph--highlight for a highlighted paragraph.

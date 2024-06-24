@@ -1,0 +1,62 @@
+/* Base block for content */
+.content {
+    margin: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+/* Base element for paragraph within the content block */
+.content_paragraph {
+    margin-bottom: 10px;
+    padding: 5px;
+}
+
+/* Modifier for primary paragraph */
+.content_paragraph--primary {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Modifier for secondary paragraph */
+.content_paragraph--secondary {
+    font-size: 1em;
+    font-weight: normal;
+    color: #555;
+}
+
+/* Modifier for highlight paragraph */
+.content_paragraph--highlight {
+    background-color: yellow;
+    padding: 10px;
+    font-style: italic;
+}
+
+/* Modifier for alert paragraph */
+.content_paragraph--alert {
+    font-weight: bold;
+    color: red;
+    text-transform: uppercase;
+}
+
+/* Modifier for note paragraph */
+.content_paragraph--note {
+    font-style: italic;
+    color: #666;
+}
+
+/* Modifier for informational paragraph */
+.content_paragraph--info {
+    font-size: 1.1em;
+    color: blue;
+}
+
+/* Modifier for footer paragraph */
+.content_paragraph--footer {
+    font-size: 0.8em;
+    color: #999;
+    text-align: center;
+}
+
+
+

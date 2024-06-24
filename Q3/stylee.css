@@ -1,0 +1,95 @@
+/* Custom color palette */
+:root {
+    --primary-color: #4CAF50;
+    --secondary-color: #2196F3;
+    --background-color: #f0f0f0;
+    --input-background-color: #ffffff;
+    --input-border-color: #cccccc;
+    --button-color: #ff5722;
+    --text-color: #333333;
+}
+
+/* General styles for the form container */
+.form-container {
+    width: 50%;
+    margin: auto;
+    background-color: var(--background-color);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Base styles for the form */
+.styled-form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Styling for form sections */
+.form-section {
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+/* Primary form section */
+.form-section--primary {
+    background-color: var(--primary-color);
+    color: #ffffff;
+}
+
+/* Secondary form section */
+.form-section--secondary {
+    background-color: var(--secondary-color);
+    color: #ffffff;
+}
+
+/* Form section with opacity */
+.form-section--opacity {
+    background-color: var(--primary-color);
+    color: #ffffff;
+    opacity: 0.8;
+}
+
+/* Styles for form titles */
+.form-title {
+    margin-bottom: 10px;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+/* Styles for form labels */
+.form-label {
+    margin-bottom: 5px;
+    display: block;
+    color: var(--text-color);
+}
+
+/* Styles for form inputs */
+.form-input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid var(--input-border-color);
+    border-radius: 5px;
+    background-color: var(--input-background-color);
+    color: var(--text-color);
+    box-sizing: border-box;
+}
+
+/* Styles for the submit button */
+.form-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--button-color);
+    color: #ffffff;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover effect for the submit button */
+.form-button:hover {
+    background-color: darken(var(--button-color), 10%);
+}
